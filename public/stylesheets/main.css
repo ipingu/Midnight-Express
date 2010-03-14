@@ -1,0 +1,187 @@
+* {
+	color: white;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #ff6;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	background-color: #09C;
+	color: #252929;
+	margin: 0;
+	margin-bottom: 3em;
+	font-size: 14px;
+	overflow-y: scroll;
+	text-align: justify;
+}
+
+
+#scroll-up {
+	position: fixed;
+	right: 1em;
+	bottom: 1em; 
+}
+
+#sidebar {
+	text-align: right;
+	min-height: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul {
+	list-style: none outside;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	line-height: 2.5em;
+}
+
+#sidebar ul li a {
+	color: #ff6;
+}
+
+hr {
+	background-color: #666;
+}
+
+#header .menu-box h1 {
+	margin: 1em;
+	margin-right: 0.5em;
+	text-align: right;
+	color: #f8b;
+}
+
+#header .menu-box a {
+	text-align: center;
+	font-size: 1.5em;
+	display: block;
+	text-decoration: none;
+	color: white;
+	background-color: #f8b;
+}
+
+#header .menu-box a:hover {
+	background-color: #3F0;
+}
+
+#title {
+	text-align: right;
+}
+
+#title h1 {
+	color: white;
+	background-color: #f8b;
+	display: inline;
+	padding: 0.15em;
+}
+
+#search input {
+	border: 0; font-weight: bold; padding: 2px; background: #00ACE6 url('/public/images/icons/developer/blue/18/zoom.png') no-repeat scroll right center; padding-right: 32px;
+}
+
+.sub-content span.sub-content-info {
+	font-style: italic;
+	color: #AAA;
+	font-size: 60%;
+}
+
+.sub-content h2 {
+	padding: 0 0.15em 0 0.15em;
+	background-color: #ff6;
+	color: #09C;
+	display: inline;
+}
+
+.sub-content > div {
+	padding: 0.15em;
+	margin-bottom: 2em;
+}
+
+
+.flash-success {
+	background-color: #FF33FF;
+}
+
+.form-content {
+	background-color: #00ACE6;
+}
+
+.form-content h3 {
+	color: white;
+	font-style: italic;
+	padding: 5px;	
+}
+
+h3.toggle_trigger {
+	text-align: center;	
+}
+
+.toggle_container {
+	margin: 10px;
+}
+
+h2.trigger {
+	padding: 0 0 0 50px;
+	margin: 0 0 5px 0;
+	background: url(h2_trigger_a.gif) no-repeat;
+	height: 46px;
+	line-height: 46px;
+	width: 450px;
+	font-size: 2em;
+	font-weight: normal;
+	float: left;
+}
+
+h2.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+
+.tag {
+	padding: 4px;
+}
+
+table#sandbox thead td {
+	border: 1px solid #09C;
+	text-align: center;
+	background-color: #ff6;
+	color: #09C;
+	font-size: 1.5em;
+}
+
+table#sandbox thead td.type {
+	background-color: #09C;
+}
+
+table#sandbox tbody td.date {
+	text-align: center;
+}
+
+table#sandbox thead td.title {
+	width: 75%;
+}
+
+a.logo img {
+	border: 15px solid #00ACE6;
+}
+
+.logo .info {
+	font-style: italic;
+	color: #CCC;
+}
+
+input {
+	color: black;
+}
+
+.comment {
+	background-color: #00ACE6;
+}

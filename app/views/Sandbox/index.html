@@ -1,0 +1,16 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+#{set bookmarksCount: models.Bookmark.count() /}
+
+<h1>My bookmarks (<i>${bookmarksCount}</i>)</h1>
+
+#{addBookmarkForm /}
+
+<br />
+
+#{if flash.success}
+<span class="success">${flash.success}</span>
+<br />
+#{/if}
+
+#{displayBookmarks bookmarks:models.Bookmark.findAll() /}

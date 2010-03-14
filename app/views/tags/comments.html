@@ -1,0 +1,12 @@
+#{list items: _comments, as: 'comment'}
+<div class="comment">
+	<div>
+		<img src="http://www.gravatar.com/avatar/${utils.MD5Util.md5Hex(comment.email)}" />
+		<br />
+		${comment.nickname}
+	</div>
+	<div>
+		${comment.content}
+	</div>
+</div>
+	#{/list}

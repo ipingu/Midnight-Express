@@ -1,0 +1,31 @@
+#{extends 'main-content.html' /}
+
+#{if post}
+
+	#{post post:post, display: 'complete' /}
+	
+	<a href="#">Un petit commentaire ?</a>
+	
+	<form method="POST" action="@{Blog.addComment}">
+		<input type="hidden" name="postId" value="${post.id}" />
+		
+		<input type="text" name="nickname" />
+		<label for="nickname">username</label>
+		
+		<br />
+	
+		<input type="text" name="email" />
+		<label for="email">email</label>
+		
+		<br />
+		
+		<textarea name="content"></textarea>
+	
+		<br />
+		
+		<input type="submit" name="add this shit" />
+	</form>
+	
+	#{comments comments:post.comments /}
+	
+#{/if}

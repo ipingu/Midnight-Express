@@ -1,0 +1,12 @@
+#{extends 'main-content.html' /}
+#{set title: category /}
+
+#{if posts == null || posts.size() == 0}
+<div class="sub-content">
+	<h2>Oops, no post yet !</h2>
+</div>
+#{/if}
+
+#{list items: posts, as: 'post'} 
+	#{post style: 'resume', post: post /}
+#{/list}

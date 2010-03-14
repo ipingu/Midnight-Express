@@ -1,0 +1,26 @@
+#{ extends 'main.html' /}
+
+<div class="span-15">
+	 #{doLayout /} 
+</div>
+
+<div class="column span-2">
+   &nbsp;<!-- space between side and content -->
+</div>
+
+<div class="span-7 last" id="sidebar">
+	#{post-latest /}
+	
+	<hr class="space" />
+
+	#{cloud /}
+	
+	<hr class="space" />
+	
+	<div class="sub-content">
+
+	<h2>- friends -</h2>
+		<img src="public/play.png"></img>
+	</div>
+		
+</div>

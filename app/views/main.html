@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+
+	<meta name="generator" content="HTML Tidy, see www.w3.org">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
+	
+	<title>#{get 'title' /}</title>
+	<link rel="stylesheet"
+		href="@{'public/stylesheets/blueprint/screen.css'}" type="text/css"
+		media="screen, projection">
+	<link rel="stylesheet"
+		href="@{'public/stylesheets/blueprint/print.css'}" type="text/css"
+		media="print"><!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet"
+		href="@{'public/stylesheets/blueprint/plugins/fancy-type/screen.css'}"
+		type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="@{'public/stylesheets/main.css'}"
+		type="text/css"><script type="text/javascript"
+		src="@{'public/javascripts/jquery-1.4.min.js'}">
+			</script> <script type="text/javascript"
+		src="@{'public/javascripts/color.js'}">
+			</script> <script type="text/javascript"
+		src="@{'public/javascripts/corner.js'}">
+			</script> <script type="text/javascript"
+		src="@{'public/javascripts/parser-url.js'}">
+	</script>
+	
+</head>
+
+	<body>
+		<div class="container">
+			#{include 'main-header.html' /}
+			
+			<hr class="space" />
+			
+			#{if flash.success}
+				<span class="flash-success">Message added</span>
+			#{/if}
+		
+			<div class="span-24 last prepend-top" id="sub-container">
+				#{doLayout /}
+			</div>
+		
+			<hr class="space" />
+			<hr class="space" />
+			
+			<div style="text-align: center">
+				Developped by ipingu with Play! framework - <a href="#">sources</a>
+			</div>		
+		</div>
+	</body>
+</html>
